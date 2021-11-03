@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%= stylesheet_link_tag "events" %>
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>Galore Events</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="col">Photo</th>
+          <th class="col">Title</th>
+          <th class="col">Street</th>
+          <th class="col">City</th>
+          <th class="col">State</th>
+          <th class="col">ZipCode</th>
+          <th class="col">Email</th>
+          <th class="col">Phone</th>
+          <th class="col">Spots Available</th>
+          <th colspan="10"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @events.each do |event,num| %>
+        <tr class="row-body">
+          <td><%= image_tag event.photo, height: 50 %></td>
+
+          <td><%= event.title.capitalize() %></td>
+          <td><%= event.street %></td>
+
+          <td><%= event.city %></td>
+
+          <td><%= event.state %></td>
+
+          <td><%= event.postal %></td>
+
+          <td><%= event.email %></td>
+
+          <td><%= event.phone %></td>
+
+          <td><%= event.available_spots %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>

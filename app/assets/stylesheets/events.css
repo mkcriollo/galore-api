@@ -1,0 +1,51 @@
+body {
+  background-color: #5bb9b8;
+}
+
+h1 {
+  text-align: center;
+  color: #202932;
+  letter-spacing: 4px;
+}
+
+.table {
+  width: 100vw;
+  height: fit-content;
+}
+
+.col {
+  width: fit-content;
+  height: 20px;
+  background-color: #202932;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+.row-body {
+  width: fit-content;
+  height: 50px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: #7a91aa;
+}
+
+.row-body:hover {
+  background-color: #a8dadc;
+}
+
+tr > td {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #28333f;
+}
+
+tr > td:hover {
+  color: #333;
+  background-color: #f1faee;
+}
+
+td > img {
+  object-fit: cover;
+  width: 100%;
+}
