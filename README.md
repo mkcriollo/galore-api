@@ -17,3 +17,7 @@ Technologies:
 Features
 
 - Look through events (Know name, location, contact info and available spots)
+
+Update 
+
+-project done
